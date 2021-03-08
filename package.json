@@ -1,0 +1,17 @@
+{
+  "name": "seq",
+  "version": "1.0.0",
+  "description": "Sequencer to share",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "deploy": "pm2 deploy staging",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lenya Pugachev <lenyapugachev@me.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.2"
+  }
+}

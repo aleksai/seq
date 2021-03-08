@@ -1,0 +1,89 @@
+.panel {
+	display: flex;
+	justify-content: center;
+}
+
+.panel .button {
+	width: 50px;
+	height: 50px;
+
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+
+	background-size: cover;
+}
+
+.panel .room {
+	font-size: 24px;
+	padding: 0 5px;
+
+	background-color: #E9DC61;
+}
+
+.panel .room.error {
+	background-color: #FF0071;
+}
+
+.panel .room.connected {
+	background-color: #90E600;
+}
+
+.panel .button.join {
+	background-image: url(join.png);
+
+	margin-left: 10px;
+}
+
+.panel .button.play {
+	background-image: url(play.png);
+
+	margin-right: 30px;
+}
+
+.panel .button.pause {
+	background-image: url(pause.png);
+}
+
+.panel .button.play:active {
+	background-color: #fafafa;
+}
+
+.grid {
+	display: flex;
+	justify-content: center;
+}
+
+.grid .column {
+	float: left;
+}
+
+.grid .tact {
+	margin: 0 5px;
+}
+
+.grid .column .cell {
+	width: 50px;
+	height: 50px;
+
+	margin: 10px 5px;
+
+	border-radius: 5px;
+
+	background-color: #f0f0f0;
+}
+
+.grid .column .cell.current {
+	background-color: #E7EAFA;
+}
+
+.grid .column .cell.active {
+	background-color: #99aafa;
+}
+
+.grid.my .column .cell.current {
+	background-color: #F0DDD8;
+}
+
+.grid.my .column .cell.active {
+	background-color: #f0aa99;
+}
